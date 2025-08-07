@@ -34,28 +34,33 @@
 
         <!-- Main content -->
         <div
-            class="container-fluid h-100 d-flex align-items-start align-items-md-center justify-content-center pt-5 pt-md-0">
+            class="container-fluid h-100 d-flex align-items-center justify-content-center pt-5 pt-md-0">
             <div class="row">
                 <div class="col-lg-8 center">
-                    <div class="chalkboard p-4 p-md-5 text-center">
-                        <div class="mb-3">
-                            <i class="bi bi-mortarboard-fill text-warning" style="font-size: 3rem;"></i>
+                    <div class="chalkboard text-center d-flex flex-column justify-content-between p-0">
+                        <div class="main p-4 p-md-5">
+                            <div class="mb-3">
+                                <i class="bi bi-mortarboard-fill text-warning" style="font-size: 3rem;"></i>
+                            </div>
+
+                            <h1 class="quiz-title h3 h2-md mb-3 fw-semibold">
+                                Welcome to Simple <span class="highlight">Interactive</span> Quiz
+                            </h1>
+
+                            <button class="btn btn-quiz btn-sm text-white rounded-4" onclick="startQuiz()">
+                                <i class="bi bi-rocket-takeoff me-2"></i>
+                                START QUIZ
+                            </button>
                         </div>
-
-                        <h1 class="quiz-title h2 h1-md mb-3">
-                            Welcome to Simple <span class="highlight">Interactive</span> Quiz
-                        </h1>
-
-                        <button class="btn btn-quiz btn-sm text-white rounded-4" onclick="startQuiz()">
-                            <i class="bi bi-rocket-takeoff me-2"></i>
-                            START QUIZ
-                        </button>
+                        <div class="bottom py-2 py-lg-3">
+                            helo
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-lg-4">
                     <div class="boy-img center pt-3 pt-md-0">
-                        <img src="assets/img/welcome.png" class="img-fluid position-relative" height="250" width="250"
+                        <img src="assets/img/welcome.png" class="img-fluid position-relative d-none d-md-block" height="250" width="250"
                             alt="">
                     </div>
                 </div>

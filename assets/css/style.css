@@ -5,7 +5,6 @@
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
     overflow: hidden;
     background: linear-gradient(to bottom, #87CEEB 0%, #98D8E8 70%, #B8E6B8 100%);
     min-height: 100vh;
@@ -26,11 +25,15 @@ body {
         0 10px 30px rgba(0, 0, 0, 0.3),
         inset 0 2px 0 rgba(255, 255, 255, 0.1);
     position: relative;
+    max-width: 600px;
+}
+
+.bottom {
+    background-color: #b57e4b;
+    border-radius: 20px 20px 0 0;
 }
 
 .quiz-title {
-    font-family: 'Fredoka One', cursive;
-    color: #FFFF99;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -40,7 +43,7 @@ body {
 
 .btn-quiz {
     background-color: #4c9b37;
-    border: 3px solid #8B4513;
+    border: 2px solid #8B4513;
     font-weight: 600;
     letter-spacing: 1px;
     padding: 0.75rem 1.5rem;
@@ -48,12 +51,16 @@ body {
 }
 
 .btn-quiz:hover {
-    border: 3px solid #8B4513;
+    border: 2px solid #8B4513;
     transform: translateY(-3px);
-    background-color: #2F4F2F;
+    background-color: #3d792c;
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        height: 90vh;
+    }
+
     .chalkboard {
         padding: 2rem;
     }
