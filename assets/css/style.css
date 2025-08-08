@@ -26,7 +26,6 @@ body {
         inset 0 2px 0 rgba(255, 255, 255, 0.1);
     position: relative;
     width: 600px;
-    /* max-width: 100%; */
 }
 
 .bottom {
@@ -113,7 +112,8 @@ body {
     }
 
     .chalkboard {
-        padding: 2rem;
+        width: 100%;
+        padding: 1rem;
     }
 
     .quiz-title {
@@ -132,5 +132,10 @@ body {
     .boy-img img {
         width: 120px;
         height: auto;
+    }
+
+    .answer-btn {
+        padding: 8px 16px;
+        font-size: .8rem;
     }
 }
