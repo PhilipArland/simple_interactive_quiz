@@ -33,12 +33,13 @@
         </div>
 
         <!-- Main content -->
-        <div
-            class="container-fluid h-100 d-flex align-items-center justify-content-center pt-5 pt-md-0">
+        <div class="container-fluid h-100 d-flex align-items-center justify-content-center pt-5 pt-md-0">
             <div class="row">
                 <div class="col-lg-8 center">
                     <div class="chalkboard text-center d-flex flex-column justify-content-between p-0">
-                        <div class="main p-4 p-md-5">
+
+                        <!-- Start screen -->
+                        <div class="main p-4 p-md-5 text-center" id="startScreen">
                             <div class="mb-3">
                                 <i class="bi bi-mortarboard-fill text-warning" style="font-size: 3rem;"></i>
                             </div>
@@ -52,9 +53,18 @@
                                 START QUIZ
                             </button>
                         </div>
-                        <div class="bottom py-2 py-lg-3">
-                            helo
+
+                        <!-- Quiz container (initially hidden) -->
+                        <div class="chalkboard-container d-none" id="quizContainer">
+                            <div class="main p-4 p-md-5" id="quizContent">
+                                <!-- Questions will be loaded here -->
+                            </div>
+                            <div id="navigation" class="bottom py-2 py-lg-3 d-flex justify-content-between px-5">
+                                <button class="btn-home" onclick="goHome()">HOME</button>
+                                <button class="btn-confirm" onclick="confirmAnswer()">CONFIRM</button>
+                            </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -68,7 +78,10 @@
         </div>
     </div>
 
+
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
